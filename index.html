@@ -1,0 +1,56 @@
+<!DOCTYPE <html>
+<html lang="en"
+<head>
+    <meta Charests="UTF-8">
+    <meta name="viewppoint" content="width=devise-width, intial-scale=1.0">
+    <title>Brainiac Quiz</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+
+    <div class="container">
+        <!-- Screen 1: Start Screen -->
+        <div id="start-screen" class="Screen"
+            <h1>Brainiac Quiz</h1>
+            <p>Test your knowledge and beat the high score!</p>
+            <input type="text" id="player-name" placeholder="Enter your name...">
+
+            <h3>Choose a Category:</h3>
+            <div class="categories">
+                <button class="cat-btn" data-category="general">General Knowledge</button>
+                <button class="cat-btn" data-category="gaming">Video Games</button>
+                <button class="cat-btn" data-category="sports">Sports & Football</button>
+                <button class="cat-btn" data-category="science">Science & Space</button>
+                <button class="cat-btn" data-category="movies">Movies & Tv</button>
+            </div>
+    </div>
+    <!-- Screen 2: Quiz Gameplay -->
+    <div id="quiz-screen" class="screen hidden">
+        <div class="top-bar">
+            <span>Player: <strong id="display-name"></strong></span>
+            <span>Time: <strong id="timer">15</strong></span>
+            <span>Score:<strong id=score>0</strong></span>
+        </div>
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <h2 id="question-text">Question text goes here?</h2>
+        <div id="options-container"></div>
+        <p id="fun-fact" class="hidden"></p>
+        <button id="next-btn" class="hidden">Next Question</buton>
+    </div>
+
+    <!-- Screen 3: Final Result-->
+    <div id="result-screen" class="screen hidden">
+        <h1>Quiz Completed</h1>
+        <p id="final-message"></p>
+        <h2>Your Score: <span id="final-score">0</span></h2>
+        <p>High Score: <span id="high-score">0</span></p>
+        <button id="restart-btn">Play Again</button>
+    </div>
+ </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
